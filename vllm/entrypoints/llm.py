@@ -401,7 +401,7 @@ class LLM:
                 parsed_conversation,
                 chat_template=chat_template,
                 add_generation_prompt=add_generation_prompt)
-            all_prompts.extend(prompts)
+            all_prompts.append(prompts)
 
         return self.generate(
             all_prompts,
